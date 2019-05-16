@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c62de02-1455-40f6-b91c-859d67b927e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Inicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,91 +18,69 @@
     <session id="1809440826">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="8" />
           <entry key="iml" value="1" />
-          <entry key="java" value="9" />
+          <entry key="java" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="8" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="1985" />
+          <entry key="java" value="5117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1985" />
+          <entry key="JAVA" value="5117" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="65" lean-forward="true" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+            <state relative-caret-position="165">
+              <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
               <folding>
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/Pensador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Resources/PensadorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="-527">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/inicio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#124#125#0" expanded="true" />
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#4907#4908#0" expanded="true" />
+                <element signature="e#4976#4977#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,11 +110,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/Resources/PensadorHumano.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Pensador.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/PensadorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Vista.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/AvivinadorOrdenador.java" />
+        <option value="$PROJECT_DIR$/src/test/Resources/AvivinadorOrdenadorTest.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" />
+        <option value="$PROJECT_DIR$/src/test/Resources/AdivinadorOrdenadorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java" />
         <option value="$PROJECT_DIR$/src/main/inicio.java" />
+        <option value="$PROJECT_DIR$/src/main/Inicio.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java" />
       </list>
     </option>
   </component>
@@ -160,8 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,17 +176,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="prueba_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prueba_1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557719887250" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557974405450" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="public" />
@@ -232,9 +224,57 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.Test_Prueba">
-    <configuration name="inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inicio" />
+    <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Inicio" />
       <module name="prueba_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdivinadorOrdenadorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Resources" />
+      <option name="MAIN_CLASS_NAME" value="Resources.AdivinadorOrdenadorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdivinadorOrdenadorTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Resources" />
+      <option name="MAIN_CLASS_NAME" value="Resources.AdivinadorOrdenadorTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdivinadorOrdenadorTest.testLongitudPrimerNumero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Resources" />
+      <option name="MAIN_CLASS_NAME" value="Resources.AdivinadorOrdenadorTest" />
+      <option name="METHOD_NAME" value="testLongitudPrimerNumero" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,36 +293,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumeroAleatorioTest.testVerificarCifraRepetida2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Resources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Resources" />
-      <option name="MAIN_CLASS_NAME" value="Resources.NumeroAleatorioTest" />
-      <option name="METHOD_NAME" value="testVerificarCifraRepetida2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PensadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Resources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Resources" />
-      <option name="MAIN_CLASS_NAME" value="Resources.PensadorTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test_Prueba" type="JUnit" factoryName="JUnit">
       <module name="prueba_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -296,17 +306,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Test_Prueba" />
-      <item itemvalue="Application.inicio" />
+      <item itemvalue="Application.Inicio" />
       <item itemvalue="JUnit.NumeroAleatorioTest" />
-      <item itemvalue="JUnit.NumeroAleatorioTest.testVerificarCifraRepetida2" />
-      <item itemvalue="JUnit.PensadorTest" />
+      <item itemvalue="JUnit.AdivinadorOrdenadorTest.testLongitudPrimerNumero" />
+      <item itemvalue="JUnit.AdivinadorOrdenadorTest.test" />
+      <item itemvalue="JUnit.AdivinadorOrdenadorTest.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.inicio" />
+        <item itemvalue="Application.Inicio" />
+        <item itemvalue="JUnit.AdivinadorOrdenadorTest.test1" />
+        <item itemvalue="JUnit.AdivinadorOrdenadorTest.test" />
+        <item itemvalue="JUnit.AdivinadorOrdenadorTest.testLongitudPrimerNumero" />
         <item itemvalue="JUnit.NumeroAleatorioTest" />
-        <item itemvalue="JUnit.PensadorTest" />
-        <item itemvalue="JUnit.NumeroAleatorioTest.testVerificarCifraRepetida2" />
       </list>
     </recent_temporary>
   </component>
@@ -324,67 +336,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PensadorTest_test4CifrasLugarIncorrectoEntre2Numeros - 2019.05.12 at 23h 25m 57s.xml">
-      <configuration name="PensadorTest.test4CifrasLugarIncorrectoEntre2Numeros" configurationId="JUnit" />
+    <history-entry file="AdivinadorOrdenadorTest_testLongitudPrimerNumero - 2019.05.15 at 11h 21m 20s.xml">
+      <configuration name="AdivinadorOrdenadorTest.testLongitudPrimerNumero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PensadorTest - 2019.05.12 at 23h 27m 49s.xml">
-      <configuration name="PensadorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest - 2019.05.12 at 23h 44m 48s.xml">
+    <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 22m 16s.xml">
       <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumeroAleatorioTest_testVerificarCifraRepetida - 2019.05.12 at 23h 50m 42s.xml">
-      <configuration name="NumeroAleatorioTest.testVerificarCifraRepetida" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest_testVerificarCifraRepetida - 2019.05.12 at 23h 51m 01s.xml">
-      <configuration name="NumeroAleatorioTest.testVerificarCifraRepetida" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest_testVerificarCifraRepetida1 - 2019.05.12 at 23h 51m 28s.xml">
-      <configuration name="NumeroAleatorioTest.testVerificarCifraRepetida1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest_testVerificarCifraRepetida2 - 2019.05.12 at 23h 53m 32s.xml">
-      <configuration name="NumeroAleatorioTest.testVerificarCifraRepetida2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest - 2019.05.12 at 23h 53m 54s.xml">
+    <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 22m 44s.xml">
       <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PensadorTest - 2019.05.12 at 23h 54m 08s.xml">
-      <configuration name="PensadorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest - 2019.05.13 at 00h 02m 58s.xml">
+    <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 23m 13s.xml">
       <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 23m 23s.xml">
+      <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest_testLongitudPrimerNumero - 2019.05.15 at 11h 26m 48s.xml">
+      <configuration name="AdivinadorOrdenadorTest.testLongitudPrimerNumero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest_test - 2019.05.15 at 11h 36m 50s.xml">
+      <configuration name="AdivinadorOrdenadorTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest_test1 - 2019.05.15 at 11h 38m 44s.xml">
+      <configuration name="AdivinadorOrdenadorTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest_test1 - 2019.05.15 at 11h 39m 28s.xml">
+      <configuration name="AdivinadorOrdenadorTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest_test1 - 2019.05.15 at 11h 40m 51s.xml">
+      <configuration name="AdivinadorOrdenadorTest.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="SonarLint" weight="0.5237316" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.7250409" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31751227" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7806874" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5351882" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" weight="0.32980332" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="8" weight="0.5237316" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.83797055" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32980332" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -394,57 +407,191 @@
     <entry file="file://$PROJECT_DIR$/prueba_1.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="65" lean-forward="true" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorHumano.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Resources/Pensador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Resources/PensadorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
+        <state relative-caret-position="526">
           <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorHumano.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="1335" selection-start-line="1335" selection-end-line="1335" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/inicio.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="285" selection-start-line="285" selection-end-line="285" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1469" selection-start-line="1469" selection-end-line="1469" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="1534" selection-start-line="1534" selection-end-line="1534" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Resources/AvivinadorOrdenadorTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Vista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Inicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding>
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Resources/AdivinadorOrdenadorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#4907#4908#0" expanded="true" />
+            <element signature="e#4976#4977#0" expanded="true" />
           </folding>
         </state>
       </provider>

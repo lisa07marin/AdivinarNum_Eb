@@ -15,7 +15,7 @@ public class NumeroAleatorioTest {
     }
 
     @Test
-    public void testVereficarNumAleatorio4Cifras() {
+    public void testVerificarNumAleatorio4Cifras() {
         NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         String resultado = numeroAleatorio.numAleatorio4CifrasSinRepetirString();
         String resultado1 = numeroAleatorio.numAleatorio4CifrasSinRepetirString();

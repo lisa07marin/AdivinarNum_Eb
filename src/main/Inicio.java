@@ -3,7 +3,7 @@ import Resources.Pensador;
 
 import java.util.Scanner;
 
-public class inicio {
+public class Inicio {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         adivinadorHumano(scanner);
@@ -18,8 +18,8 @@ public class inicio {
             System.out.print("Escriba un numero de 4 cifras: ");
             String numAdivinador = scanner.next();
             cifrasCorrectas = pensador.cifrasEnElLugarCorrecto(numAdivinador, numAleatorio);
-            System.out.println("Cifras lugar correcto: " + cifrasCorrectas);
-            System.out.println("Cifras lugar incorrecto: " + pensador.cifrasLugarIncorrecto(numAdivinador, numAleatorio));
+            System.out.println("Cifras en el lugar correcto: " + cifrasCorrectas);
+            System.out.println("Cifras en el lugar incorrecto: " + pensador.cifrasLugarIncorrecto(numAdivinador, numAleatorio));
             if (cifrasCorrectas == 4) {
                 System.out.println("HAS GANADO!");
             }

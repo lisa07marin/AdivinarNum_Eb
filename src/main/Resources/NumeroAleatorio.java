@@ -2,9 +2,9 @@ package Resources;
 
 public class NumeroAleatorio {
 
-    //define en un vector el num aleatorio cifra por cifra, sin que se repita alguna
-    private int[] definirNumAleatorio4CifrasSinRepetir() {
-        int[] numAleatorioVector = new int[4];
+    //define en un vector, de n dimension, un num aleatorio cifra por cifra, sin que se repita alguna
+    public int[] definirNumAleatorio4CifrasSinRepetir(int n) {
+        int[] numAleatorioVector = new int[n];
         for (int i = 0; i < numAleatorioVector.length; i++) {
             int cifraAleatoria = numDecimalAleatorio();
             if (!cifraRepetida(numAleatorioVector, cifraAleatoria)) {
@@ -34,7 +34,7 @@ public class NumeroAleatorio {
 
     //se concatena en un String el numero que se guardó en el vector, para tu futura comparación
     public String numAleatorio4CifrasSinRepetirString() {
-        int[] numAleatorioVector = definirNumAleatorio4CifrasSinRepetir();
+        int[] numAleatorioVector = definirNumAleatorio4CifrasSinRepetir(4);
         StringBuilder bld = new StringBuilder();
         for (int i = 0; i < numAleatorioVector.length; i++) {
             bld.append(Integer.toString(numAleatorioVector[i]));
