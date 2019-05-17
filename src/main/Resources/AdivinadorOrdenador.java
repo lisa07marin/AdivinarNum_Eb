@@ -4,12 +4,18 @@ import java.util.ArrayList;
 
 public class AdivinadorOrdenador {
     int[] vector = {2, 3, 8, 1, 0, 4, 6, 7, 9, 5};
-    ArrayList<int[]> arrayConNnumerosAdivinados = new ArrayList<>();
-    int []vectorNumCoincidentes=new int[4];
-    ArrayList <Integer> arrayNumDescartados=new ArrayList<>();
+    public ArrayList<int[]> arrayConNumerosAdivinados = new ArrayList<>();
+    int[] vectorNumCoincidentes = new int[4];
 
-    int COINCIDENTES =0;
+    int COINCIDENTES = 0;
 
+    final int PRIMER_NUMERO  = 0;
+    final int SEGUNDO_NUMERO  = 1;
+
+
+    public ArrayList<int[]> getArrayConNumerosAdivinados() {
+        return this.arrayConNumerosAdivinados;
+    }
 
     public int[] primerNumero() {
         int[] primerNumero = new int[4];
@@ -21,16 +27,25 @@ public class AdivinadorOrdenador {
 
     public int[] segundoNumero() {
         int[] segundoNumero = new int[4];
-        for (int j = 0; j < segundoNumero.length; j++) {
-            for (int i = 4; i < 8; i++) {
-                segundoNumero[j] = this.vector[i];
-            }
-        }
+        int i = 0; //indice del segundo numero
+        int j = 4; //indice del vector
+        do {
+            segundoNumero[i] = this.vector[j];
+            i++;
+            j++;
+        } while (i < 4 && j < 8);
         return segundoNumero;
     }
 
-    public void añadirAlArrayNumUsados(int []numUsado){
-        arrayConNnumerosAdivinados.add(numUsado);
+    public void añadirAlArrayNumUsados(int[] numUsado) {
+        arrayConNumerosAdivinados.add(numUsado);
     }
 
+    public void darPrimerNumero() {
+        arrayConNumerosAdivinados.add(primerNumero());
+    }
+
+    public void darSegundoNumero() {
+        arrayConNumerosAdivinados.add(segundoNumero());
+    }
 }

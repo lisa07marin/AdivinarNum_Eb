@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0c62de02-1455-40f6-b91c-859d67b927e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prueba_1/Inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prueba_1/Inicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prueba_1/Resources/AdivinadorOrdenador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prueba_1/Resources/AdivinadorOrdenador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prueba_1/Resources/LogicaAdivinadorOrdenador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prueba_1/Resources/LogicaAdivinadorOrdenador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prueba_1/Resources/NumeroAleatorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prueba_1/Resources/NumeroAleatorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prueba_1/Vista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/prueba_1/Resources/AdivinadorOrdenadorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/prueba_1/Resources/AdivinadorOrdenadorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Inicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Vista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/Vista.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,25 +40,25 @@
         <counts>
           <entry key="class" value="8" />
           <entry key="iml" value="1" />
-          <entry key="java" value="28" />
+          <entry key="java" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="8" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="5117" />
+          <entry key="java" value="9280" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5117" />
+          <entry key="JAVA" value="9280" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -59,13 +67,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="476">
+              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1253#1254#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/Vista.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,13 +109,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="-933">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="281" selection-start-line="281" selection-end-line="281" />
               <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#4907#4908#0" expanded="true" />
-                <element signature="e#4976#4977#0" expanded="true" />
+                <element signature="e#10388#10389#0" expanded="true" />
+                <element signature="e#15586#15587#0" expanded="true" />
+                <element signature="e#15631#15632#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Inicio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="47" column="175" lean-forward="true" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="175" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,15 +167,15 @@
         <option value="$PROJECT_DIR$/src/main/Resources/PensadorHumano.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/Pensador.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/PensadorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Vista.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/AvivinadorOrdenador.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/AvivinadorOrdenadorTest.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" />
+        <option value="$PROJECT_DIR$/src/main/inicio.java" />
         <option value="$PROJECT_DIR$/src/test/Resources/AdivinadorOrdenadorTest.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java" />
-        <option value="$PROJECT_DIR$/src/main/inicio.java" />
         <option value="$PROJECT_DIR$/src/main/Inicio.java" />
+        <option value="$PROJECT_DIR$/src/main/Vista.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java" />
       </list>
     </option>
@@ -195,7 +250,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557974405450" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558057684043" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="public" />
@@ -205,6 +260,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -223,10 +281,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test_Prueba">
+  <component name="RunManager">
     <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Inicio" />
       <module name="prueba_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdivinadorOrdenadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Resources" />
+      <option name="MAIN_CLASS_NAME" value="Resources.AdivinadorOrdenadorTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -279,20 +351,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumeroAleatorioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Resources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Resources" />
-      <option name="MAIN_CLASS_NAME" value="Resources.NumeroAleatorioTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test_Prueba" type="JUnit" factoryName="JUnit">
       <module name="prueba_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -307,18 +365,18 @@
     <list>
       <item itemvalue="JUnit.Test_Prueba" />
       <item itemvalue="Application.Inicio" />
-      <item itemvalue="JUnit.NumeroAleatorioTest" />
       <item itemvalue="JUnit.AdivinadorOrdenadorTest.testLongitudPrimerNumero" />
       <item itemvalue="JUnit.AdivinadorOrdenadorTest.test" />
       <item itemvalue="JUnit.AdivinadorOrdenadorTest.test1" />
+      <item itemvalue="JUnit.AdivinadorOrdenadorTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Inicio" />
+        <item itemvalue="JUnit.AdivinadorOrdenadorTest" />
         <item itemvalue="JUnit.AdivinadorOrdenadorTest.test1" />
         <item itemvalue="JUnit.AdivinadorOrdenadorTest.test" />
         <item itemvalue="JUnit.AdivinadorOrdenadorTest.testLongitudPrimerNumero" />
-        <item itemvalue="JUnit.NumeroAleatorioTest" />
       </list>
     </recent_temporary>
   </component>
@@ -336,12 +394,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdivinadorOrdenadorTest_testLongitudPrimerNumero - 2019.05.15 at 11h 21m 20s.xml">
-      <configuration name="AdivinadorOrdenadorTest.testLongitudPrimerNumero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 22m 16s.xml">
-      <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumeroAleatorioTest - 2019.05.15 at 11h 22m 44s.xml">
       <configuration name="NumeroAleatorioTest" configurationId="JUnit" />
     </history-entry>
@@ -366,12 +418,17 @@
     <history-entry file="AdivinadorOrdenadorTest_test1 - 2019.05.15 at 11h 40m 51s.xml">
       <configuration name="AdivinadorOrdenadorTest.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test_Prueba - 2019.05.15 at 23h 40m 13s.xml">
+      <configuration name="Test_Prueba" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdivinadorOrdenadorTest - 2019.05.16 at 02h 36m 10s.xml">
+      <configuration name="AdivinadorOrdenadorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -380,14 +437,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7806874" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5351882" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4140753" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.65466446" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.5237316" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.83797055" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.81996727" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -402,6 +459,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="arrayConNumerosAdivinados.get(2)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/prueba_1.iml">
@@ -440,20 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="285" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="1469" selection-start-line="1469" selection-end-line="1469" />
         </state>
       </provider>
     </entry>
@@ -528,13 +578,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Resources/AvivinadorOrdenadorTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Resources/NumeroAleatorioTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -545,38 +588,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Vista.java">
+    <entry file="file://$PROJECT_DIR$/src/test/Resources/AdivinadorOrdenadorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Inicio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/ThreadGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="162">
+          <caret line="944" selection-start-line="944" selection-end-line="944" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="757" selection-start-line="757" selection-end-line="757" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="3098" selection-start-line="3098" selection-end-line="3098" />
           <folding>
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#121769#121770#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Resources/AdivinadorOrdenadorTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        <state relative-caret-position="-232">
+          <caret line="541" selection-start-line="541" selection-end-line="541" />
+          <folding>
+            <element signature="e#20831#20832#0" expanded="true" />
+            <element signature="e#20871#20872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Inicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="175" lean-forward="true" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="175" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="281" selection-start-line="281" selection-end-line="281" />
+          <folding>
+            <element signature="e#10388#10389#0" expanded="true" />
+            <element signature="e#15586#15587#0" expanded="true" />
+            <element signature="e#15631#15632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/AdivinadorOrdenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/NumeroAleatorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/Vista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -585,14 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Resources/LogicaAdivinadorOrdenador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#4907#4908#0" expanded="true" />
-            <element signature="e#4976#4977#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-933">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>

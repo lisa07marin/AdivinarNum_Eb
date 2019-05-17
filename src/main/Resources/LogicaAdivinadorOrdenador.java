@@ -1,21 +1,89 @@
 package Resources;
 
+import java.util.Scanner;
+
 public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
 
-    public void darPrimerNumero() {
-        arrayConNnumerosAdivinados.add(primerNumero());
-    }
+    Scanner scanner = new Scanner(System.in);
 
-    public void primerNumeroprobable1() {
-        int[] segundoNum = segundoNumero();
-        arrayConNnumerosAdivinados.add(segundoNum);
-        if (COINCIDENTES==1){
-            segundoNumeroProbable1();
-            restoSonLasDosCifraProbables();
+    public void segundoNumeroCoincidente3CambieUltimaCifraYCoincidenteDisminuyo1() {
+        //descartamos primera cifra del primer numero
+        //vuelvo al numero anterior en la posicion 3 del vectorNumCoincidentes
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(1)[3]; //coincidentes=3
+        //cambio la cifra en posicion 2 del vectorNumCoincidentes por la segunda cifra del primer numero ingresado
+        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(0)[1];
+        arrayConNumerosAdivinados.add(vectorNumCoincidentes);//para mostrar al usuario
+        /////////////////////////////////////////////////////////////
+        ///usuario ingresa coincidentes/
+        //////////////////////////////////////////////////////////////
+        if (COINCIDENTES == 3) {//si los coincidentes siguen iguales, entonces:
+            vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(0)[2];
+            if (COINCIDENTES == 3) {//si los coincidentes siguen iguales, entonces:
+                //la ultima cifra que queda por probar es la correcta
+                vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(0)[3];
+                coincidentes4();
+            }
+        }
+        if (COINCIDENTES == 2) {//disminuyen los coincidentes entonces el numero en esa posicion era coincidentes
+            //descartamos segunda cifra del primer numero
+            //volvemos al valor que tenia antes
+            vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(1)[2];
+            //cambiamos la cifra en la posicion 1 por la tercer cifra del primer numero ingresado
+            vectorNumCoincidentes[1] = arrayConNumerosAdivinados.get(0)[2];
+            if (COINCIDENTES == 2) {////disminuyen los coincidentes entonces el numero en esa posicion era coincidentes
+                vectorNumCoincidentes[1] = arrayConNumerosAdivinados.get(1)[1];
+                //descarto la tercera cifra del primer numero
+                //entonces las ultima cifra del primer num es la coincidentes
+                vectorNumCoincidentes[0] = arrayConNumerosAdivinados.get(0)[3];
+                coincidentes4();
+            }
+
         }
     }
 
-    public void segundoNumeroProbable1() {
+    public void segundoNumeroCoincidente3CambieUltimaCifraYCoincidenteIgual() {
+        //descartamos la primera cifra del primer numero
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(0)[1];
+        if (COINCIDENTES == 3) {
+            vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(0)[2];
+            if (COINCIDENTES == 3) {
+                //entonces las ultima cifra del primer numero es la cifra coincidente
+                vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(0)[3];
+                coincidentes4();
+            }
+        }
+    }
+
+
+    public void segundoNumeroCoincidente3() {
+        //numeros no usados (resto) son descartados
+        //usamos el segundo numero como los coincidentes
+        segundoNumeroComoCoincidentes();
+        //cambiamos ultima cifra por primera cifra del primer numero
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(0)[0];
+        arrayConNumerosAdivinados.add(vectorNumCoincidentes);
+        /////////////////////////////////////////////////////////////
+        ///usuario ingresa coincidentes/
+        //////////////////////////////////////////////////////////////
+        if (COINCIDENTES == 2) { //disminuyen los coincidentes entonces el numero en esa posicion era coincidentes
+            segundoNumeroCoincidente3CambieUltimaCifraYCoincidenteDisminuyo1();
+        }
+        if (COINCIDENTES == 3) {//si los coincidentes siguen iguales, entonces:
+            segundoNumeroCoincidente3CambieUltimaCifraYCoincidenteIgual();
+        }
+        if (COINCIDENTES == 4) {
+            coincidentes4();
+        }
+
+    }
+
+    public void segundoNumeroCoincidente2() {
+        //usamos el segundo numero como los coincidentes
+        segundoNumeroComoCoincidentes();
+
+    }
+
+    public void segundoNumeroCoincidente1() {
         //problables son los dos numero no usados en posicion 8,9
         vectorNumCoincidentes[0] = vector[8];
         vectorNumCoincidentes[1] = vector[9];
@@ -24,77 +92,97 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
     public void restoSonLasDosCifraProbables() {
         //1 probable esta en el primer grupo
         //1 probable en el segundo grupo
-        vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[0];
-        vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[0];
-        if (COINCIDENTES == 4) {
-            coincidentes4();
-            //vector de numeros probables ya encontrados!!
-        }
+        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(PRIMER_NUMERO)[0];
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(SEGUNDO_NUMERO)[0];
+        arrayConNumerosAdivinados.add(vectorNumCoincidentes);//para mostrar al usuario //index=3
+        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+        int COINCIDENTES = Vista.ingresaUsuario(scanner);
         if (COINCIDENTES == 3) {
             //la cifra probable se encuentra en el primer o segundo numero ingresado, para averiguarlo:
-            //cambio la cifra en posicion 3 del vectorNumCoincidentes por segunda cifra del segundo numero
-            vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[1];
+            //cambio la cifra en posicion 3 del ultimo numero adivinado por segunda/tercer/cuarta cifra del segundo numero
+            int i = 1; //indice del segundo numero
+            do {
+                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, SEGUNDO_NUMERO, i);
+                i++;
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                COINCIDENTES = Vista.ingresaUsuario(scanner);
+            } while (COINCIDENTES == 3);
+
             //si las cifras probables disminuye, entonces:
             if (COINCIDENTES == 2) {
-                //la cifra probable es la que primera cifra del segundo numero ingresado
-                vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[0];//y numeros probables serian 3
-                //cambio la cifra en posicion 2 del vectorNumCoincidentes por la segunda cifra del primer numero ingresado
-                vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[1];
-                //y desacarto el num ubicado en posicion 2 (primera cifra del primer numero ingresado) (?)
-                arrayNumDescartados.add(arrayConNnumerosAdivinados.get(0)[0]);//(?)
+                //la cifra probable es la que primera cifra del segundo numero ingresado, vuelvo al numero anterior eliminando ultimo numero ingresado
+                int ultimo=arrayConNumerosAdivinados.size()-1;
+                arrayConNumerosAdivinados.remove(ultimo);
+                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, 1);//elimino ultimo numero ingresado y coincidentes=3
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                COINCIDENTES = Vista.ingresaUsuario(scanner);
                 if (COINCIDENTES == 3) {
-                    //cambio la cifra en posicion 2 del vectorNumCoincidentes por la tercer cifra del primer numero ingresado
-                    vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[2];
-                    //y desacarto el num ubicado en posicion 2 (segunda cifra del primer numero ingresado)
-                    arrayNumDescartados.add(arrayConNnumerosAdivinados.get(0)[1]);
-                    if (COINCIDENTES == 3) {
-                        //la cifra probable es la ultima cifra del primer numero ingresado
-                        vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[3];  ////vector de numeros probables ya encontrados!!
-                    }
-                }
-                if (COINCIDENTES == 4) {
-                    coincidentes4();
-                    //vector de numeros probables ya encontrados!!
-                }
-            }
-            //si las cifras probables sigue igual, entonces:
-            if (COINCIDENTES == 3) {
-                //la cifra probable es la primera cifra del primer numero ingresado
-                //desacarto el num ubicado en posicion 3 (segunda cifra del segundo numero ingresado)
-                arrayNumDescartados.add(arrayConNnumerosAdivinados.get(1)[1]);
-                //y reeemplazamos por la tercera cifra del segundo numero ingresado
-                vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[2];
-                if (COINCIDENTES == 3) {
-                    //el probable del segundo numero es la ultima cifra de tal numero
-                    vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[3]; ////vector de numeros probables ya encontrados!!
+                    i = 1; //indice del primer numero
+                    do {
+                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, i);
+                        i++;
+                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                        COINCIDENTES = Vista.ingresaUsuario(scanner);
+                    } while (COINCIDENTES == 3);
+
                 }
             }
         }
         if (COINCIDENTES == 2) {
-            //las cifras probables no son la primer cifra de los numeros ingresados y reeemplazamos por los siguientes
-            vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[1];
-            vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[1];
+            int i = 1;
+            do {
+                int[] vectorUltimoNumero = arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1);
+                vectorUltimoNumero[2] = arrayConNumerosAdivinados.get(0)[i];
+                vectorUltimoNumero[3] = arrayConNumerosAdivinados.get(1)[i];
+                arrayConNumerosAdivinados.add(vectorUltimoNumero);
+                i++;
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                COINCIDENTES = Vista.ingresaUsuario(scanner);
+            } while (COINCIDENTES == 2); //i solo llega hasta 3
 
             if (COINCIDENTES == 3) {
-                //hacer lo que indica el COINCIDENTES=3 pero con el nidice +1
-            }
-
-            if (COINCIDENTES == 2) {
-                //las cigras probables no son la segunda cifra de los numeros ingresados y reeemplazamos por los siguientes
-                vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[2];
-                vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[2];
+                i = 2; //indice del segundo numero
+                do {
+                    cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, SEGUNDO_NUMERO, i);
+                    i++;
+                    System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                    COINCIDENTES = Vista.ingresaUsuario(scanner);
+                } while (COINCIDENTES == 3);
                 if (COINCIDENTES == 2) {
-                    //las cifras probables son las ultimas cifras de los numeros ingresados
-                    vectorNumCoincidentes[2] = arrayConNnumerosAdivinados.get(0)[3];
-                    vectorNumCoincidentes[3] = arrayConNnumerosAdivinados.get(1)[3];///vector de numeros probables ya encontrados!!
+                    //la cifra probable es la que primera cifra del segundo numero ingresado, vuelvo al numero anterior eliminando ultimo numero ingresado
+                    arrayConNumerosAdivinados.remove(arrayConNumerosAdivinados.size() - 1); //elimino ultimo numero ingresado
+                    i = 2;
+                    do {
+                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, i);
+                        i++;
+                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                        COINCIDENTES = Vista.ingresaUsuario(scanner);
+
+                    } while (COINCIDENTES == 3);
                 }
             }
-
+        }
+        if (COINCIDENTES == 4) {
+            coincidentes4(); //vector de numeros probables ya encontrados!!
         }
     }
 
     public void coincidentes4() {
-        arrayConNnumerosAdivinados.add(vectorNumCoincidentes);
+        arrayConNumerosAdivinados.add(vectorNumCoincidentes);
+        System.out.println("4!!!");
+    }
+
+    public void segundoNumeroComoCoincidentes() {
+        vectorNumCoincidentes[0] = arrayConNumerosAdivinados.get(1)[0];
+        vectorNumCoincidentes[1] = arrayConNumerosAdivinados.get(1)[1];
+        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(1)[2];
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(1)[3];
+    }
+
+    public void cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(int posicionACambiar, int numero, int indiceDelNumero) {
+        int[] vectorUltimoNumero = arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1);
+        vectorUltimoNumero[posicionACambiar] = arrayConNumerosAdivinados.get(numero)[indiceDelNumero];
+        arrayConNumerosAdivinados.add(vectorUltimoNumero);
     }
 
 
