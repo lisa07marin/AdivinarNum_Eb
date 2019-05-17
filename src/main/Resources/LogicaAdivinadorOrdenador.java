@@ -92,36 +92,37 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
     public void restoSonLasDosCifraProbables() {
         //1 probable esta en el primer grupo
         //1 probable en el segundo grupo
-        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(PRIMER_NUMERO)[0];
-        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(SEGUNDO_NUMERO)[0];
+        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(INDICE_PRIMER_NUMERO)[0];
+        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(INDICE_SEGUNDO_NUMERO)[0];
         arrayConNumerosAdivinados.add(vectorNumCoincidentes);//para mostrar al usuario //index=3
-        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
         int COINCIDENTES = Vista.ingresaUsuario(scanner);
         if (COINCIDENTES == 3) {
             //la cifra probable se encuentra en el primer o segundo numero ingresado, para averiguarlo:
             //cambio la cifra en posicion 3 del ultimo numero adivinado por segunda/tercer/cuarta cifra del segundo numero
             int i = 1; //indice del segundo numero
             do {
-                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, SEGUNDO_NUMERO, i);
+                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, INDICE_SEGUNDO_NUMERO, i);
                 i++;
-                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                 COINCIDENTES = Vista.ingresaUsuario(scanner);
             } while (COINCIDENTES == 3);
 
             //si las cifras probables disminuye, entonces:
+            i = 1; //indice del primer numero
             if (COINCIDENTES == 2) {
                 //la cifra probable es la que primera cifra del segundo numero ingresado, vuelvo al numero anterior eliminando ultimo numero ingresado
-                int ultimo=arrayConNumerosAdivinados.size()-1;
+                int ultimo = arrayConNumerosAdivinados.size() - 1;
                 arrayConNumerosAdivinados.remove(ultimo);
-                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, 1);//elimino ultimo numero ingresado y coincidentes=3
-                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, INDICE_PRIMER_NUMERO, i);//elimino ultimo numero ingresado y coincidentes=3
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                 COINCIDENTES = Vista.ingresaUsuario(scanner);
                 if (COINCIDENTES == 3) {
-                    i = 1; //indice del primer numero
+                    i++;
                     do {
-                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, i);
+                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, INDICE_PRIMER_NUMERO, i);
                         i++;
-                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                         COINCIDENTES = Vista.ingresaUsuario(scanner);
                     } while (COINCIDENTES == 3);
 
@@ -136,16 +137,16 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
                 vectorUltimoNumero[3] = arrayConNumerosAdivinados.get(1)[i];
                 arrayConNumerosAdivinados.add(vectorUltimoNumero);
                 i++;
-                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                 COINCIDENTES = Vista.ingresaUsuario(scanner);
             } while (COINCIDENTES == 2); //i solo llega hasta 3
 
             if (COINCIDENTES == 3) {
                 i = 2; //indice del segundo numero
                 do {
-                    cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, SEGUNDO_NUMERO, i);
+                    cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(3, INDICE_SEGUNDO_NUMERO, i);
                     i++;
-                    System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                    System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                     COINCIDENTES = Vista.ingresaUsuario(scanner);
                 } while (COINCIDENTES == 3);
                 if (COINCIDENTES == 2) {
@@ -153,9 +154,9 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
                     arrayConNumerosAdivinados.remove(arrayConNumerosAdivinados.size() - 1); //elimino ultimo numero ingresado
                     i = 2;
                     do {
-                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, PRIMER_NUMERO, i);
+                        cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(2, INDICE_PRIMER_NUMERO, i);
                         i++;
-                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size()-1)));
+                        System.out.println(NumeroAleatorio.numString(arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1)));
                         COINCIDENTES = Vista.ingresaUsuario(scanner);
 
                     } while (COINCIDENTES == 3);
@@ -173,16 +174,22 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
     }
 
     public void segundoNumeroComoCoincidentes() {
-        vectorNumCoincidentes[0] = arrayConNumerosAdivinados.get(1)[0];
-        vectorNumCoincidentes[1] = arrayConNumerosAdivinados.get(1)[1];
-        vectorNumCoincidentes[2] = arrayConNumerosAdivinados.get(1)[2];
-        vectorNumCoincidentes[3] = arrayConNumerosAdivinados.get(1)[3];
+        for (int i=0;i<4;i++){
+            vectorNumCoincidentes[i] = arrayConNumerosAdivinados.get(1)[i];
+        }
     }
 
     public void cambiarUnaCifraDelNumeroPorUnaCifraDeOtroNumero(int posicionACambiar, int numero, int indiceDelNumero) {
+        //como java toma los valores referenciados: tomo el vector del array en otro vector
+        //instancio un nuevo vector, le asigno valores del vector (anteriormente dicho)
+        //modifico un valor del nuevo vector y lo añado al array
         int[] vectorUltimoNumero = arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1);
-        vectorUltimoNumero[posicionACambiar] = arrayConNumerosAdivinados.get(numero)[indiceDelNumero];
-        arrayConNumerosAdivinados.add(vectorUltimoNumero);
+        int[] vectorNumeroModificado = new int[4];
+        for (int i = 0; i < 4; i++) {
+            vectorNumeroModificado[i] = vectorUltimoNumero[i];
+        }
+        vectorNumeroModificado[posicionACambiar] = arrayConNumerosAdivinados.get(numero)[indiceDelNumero];
+        arrayConNumerosAdivinados.add(vectorNumeroModificado);
     }
 
 

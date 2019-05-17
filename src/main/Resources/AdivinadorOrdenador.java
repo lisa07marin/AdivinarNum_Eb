@@ -3,15 +3,14 @@ package Resources;
 import java.util.ArrayList;
 
 public class AdivinadorOrdenador {
-    int[] vector = {2, 3, 8, 1, 0, 4, 6, 7, 9, 5};
+    int[] vector = {2, 3, 8, 1, 0, 4, 6, 7, 9, 5};  ///ARREGLAR PARA QUE LUEGO SEAN NUMEROS ALEATORIOS
     public ArrayList<int[]> arrayConNumerosAdivinados = new ArrayList<>();
-    int[] vectorNumCoincidentes = new int[4];
+    int[] vectorNumCoincidentes = new int[4];  //VECTOR USADO PARA LAS PRIMERAS MODIFICACIONES
 
-    int COINCIDENTES = 0;
+    final int INDICE_PRIMER_NUMERO = 0;
+    final int INDICE_SEGUNDO_NUMERO = 1;
 
-    final int PRIMER_NUMERO  = 0;
-    final int SEGUNDO_NUMERO  = 1;
-
+    int COINCIDENTES=0;
 
     public ArrayList<int[]> getArrayConNumerosAdivinados() {
         return this.arrayConNumerosAdivinados;
