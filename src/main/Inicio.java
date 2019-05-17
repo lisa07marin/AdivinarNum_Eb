@@ -21,8 +21,8 @@ public class Inicio {
             System.out.print("Escriba un numero de 4 cifras: ");
             String numAdivinador = scanner.next();
             cifrasCorrectas = pensador.cifrasEnElLugarCorrecto(numAdivinador, numAleatorio);
-            System.out.println("Cifras en el lugar correcto: " + cifrasCorrectas);
-            System.out.println("Cifras en el lugar incorrecto: " + pensador.cifrasLugarIncorrecto(numAdivinador, numAleatorio));
+            System.out.println("BIEN: (Cifras en el lugar correcto): " + cifrasCorrectas);
+            System.out.println("PROBABLE (Cifras en el lugar incorrecto) : " + pensador.cifrasLugarIncorrecto(numAdivinador, numAleatorio));
             if (cifrasCorrectas == 4) {
                 System.out.println("HAS GANADO!");
             }
@@ -55,11 +55,11 @@ public class Inicio {
                 logicaAdivinadorOrdenador.segundoNumeroCoincidente2();
             }
             if (coincidentes==3){
-                logicaAdivinadorOrdenador.segundoNumeroCoincidente3();
+               // logicaAdivinadorOrdenador.segundoNumeroCoincidente3();
             }
         }
         if (coincidentes == 0) {
-            logicaAdivinadorOrdenador.darSegundoNumero();
+            //logicaAdivinadorOrdenador.darSegundoNumero();
         }
     }
 }
