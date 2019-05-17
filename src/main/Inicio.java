@@ -1,14 +1,13 @@
-import Resources.LogicaAdivinadorOrdenador;
-import Resources.NumeroAleatorio;
-import Resources.Pensador;
-import Resources.Vista;
+import Resources.*;
 
 import java.util.Scanner;
 
 public class Inicio {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        adivinarPC(scanner);
+        LogicaOrdenador logicaOrdenador=new LogicaOrdenador();
+        logicaOrdenador.logicaGeneral();
+        //adivinarPC(scanner);
         //adivinadorHumano(scanner);
     }
 
@@ -55,7 +54,7 @@ public class Inicio {
                 logicaAdivinadorOrdenador.segundoNumeroCoincidente2();
             }
             if (coincidentes==3){
-               // logicaAdivinadorOrdenador.segundoNumeroCoincidente3();
+               logicaAdivinadorOrdenador.segundoNumeroCoincidente3();
             }
         }
         if (coincidentes == 0) {

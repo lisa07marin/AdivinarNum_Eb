@@ -11,8 +11,6 @@ $src/test/Resources/PensadorTest.java,6\f\6ff96e18e59ae5fa44caeb2fc6a8219f1c2ae
 +src/test/Resources/NumeroAleatorioTest.java,7\e\7efc96e16bab868bde2de5d7d3e607f403a39734
 D
 src/main/inicio.java,7\9\7967b5c9e6a91c0215a4babffd13f5ef7bfb1d4d
-C
-src/main/Vista.java,7\1\71d0f2a21c672bfa6f6362ace45ac6479a51b033
 _
 /src/test/Resources/AdivinadorOrdenadorTest.java,8\a\8a8a3006c575d1db35f728d262d0dc21a71f2c28
 [

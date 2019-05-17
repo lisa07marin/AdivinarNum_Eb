@@ -1,6 +1,7 @@
 package Resources;
 
 public class Pensador {
+
     public int cifrasCoincidentes(String numAdivinador, String numPensador) {
         int numCifrasCoincidentes = 0;
         for (int i = 0; i < numPensador.length(); i++) {
