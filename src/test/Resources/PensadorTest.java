@@ -25,7 +25,7 @@ public class PensadorTest {
     @Test
     public void test2CifrasCorrectasEntre2Numeros() {
         Pensador pensador = new Pensador();
-        int resultado = pensador.cifrasEnElLugarCorrecto("1234", "1243");
+        int resultado = pensador.cantidadCifrasBien("1234", "1243");
         int esperado = 2;
         assertEquals(resultado, esperado);
     }
@@ -33,7 +33,7 @@ public class PensadorTest {
     @Test
     public void test4CifrasCorrectasEntre2Numeros() {
         Pensador pensador = new Pensador();
-        int resultado = pensador.cifrasEnElLugarCorrecto("1234", "1234");
+        int resultado = pensador.cantidadCifrasBien("1234", "1234");
         int esperado = 4;
         assertEquals(resultado, esperado);
     }
@@ -41,7 +41,7 @@ public class PensadorTest {
     @Test
     public void test2CifrasLugarIncorrectoEntre2Numeros() {
         Pensador pensador = new Pensador();
-        int resultado = pensador.cifrasLugarIncorrecto("1234", "1243");
+        int resultado = pensador.cantidadCifrasRegulares("1234", "1243");
         int esperado = 2;
         assertEquals(resultado, esperado);
     }
@@ -49,7 +49,7 @@ public class PensadorTest {
     @Test
     public void test4CifrasLugarIncorrectoEntre2Numeros() {
         Pensador pensador = new Pensador();
-        int resultado = pensador.cifrasLugarIncorrecto("1234", "4321");
+        int resultado = pensador.cantidadCifrasRegulares("1234", "4321");
         int esperado = 4;
         assertEquals(resultado, esperado);
     }
@@ -57,10 +57,10 @@ public class PensadorTest {
     @Test
     public void test2CifrasLugarIncorrecto2CifrasLugarCorrecto() {
         Pensador pensador = new Pensador();
-        int resultado = pensador.cifrasLugarIncorrecto("1234", "2134");
+        int resultado = pensador.cantidadCifrasRegulares("1234", "2134");
         int esperado = 2;
         assertEquals(resultado, esperado);
-        int resultado1 = pensador.cifrasEnElLugarCorrecto("1234", "2134");
+        int resultado1 = pensador.cantidadCifrasBien("1234", "2134");
         int esperado1 = 2;
         assertEquals(resultado1, esperado1);
     }

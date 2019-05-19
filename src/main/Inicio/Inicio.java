@@ -1,3 +1,5 @@
+package Inicio;
+
 import Resources.*;
 
 import java.util.Scanner;
@@ -5,30 +7,32 @@ import java.util.Scanner;
 public class Inicio {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LogicaOrdenador logicaOrdenador=new LogicaOrdenador();
+        LogicaOrdenador logicaOrdenador = new LogicaOrdenador();
         logicaOrdenador.logicaGeneral();
         //adivinarPC(scanner);
         //adivinadorHumano(scanner);
     }
 
     public static void adivinadorHumano(Scanner scanner) {
-        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
+        Vista vista =new Vista();
         Pensador pensador = new Pensador();
+        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         String numAleatorio = numeroAleatorio.numAleatorio4CifrasSinRepetirString();
-        int cifrasCorrectas = 0;
+        int cifrasBien = 0;
+        int cifrasRegulares = 0;
         do {
-            System.out.print("Escriba un numero de 4 cifras: ");
-            String numAdivinador = scanner.next();
-            cifrasCorrectas = pensador.cifrasEnElLugarCorrecto(numAdivinador, numAleatorio);
-            System.out.println("BIEN: (Cifras en el lugar correcto): " + cifrasCorrectas);
-            System.out.println("PROBABLE (Cifras en el lugar incorrecto) : " + pensador.cifrasLugarIncorrecto(numAdivinador, numAleatorio));
-            if (cifrasCorrectas == 4) {
+            String numAdivinador = vista.pedirNumero();
+            cifrasBien = pensador.cantidadCifrasBien(numAdivinador, numAleatorio);
+            System.out.println("BIEN: (Cifras en el lugar correcto): " + cifrasBien);
+            cifrasRegulares = pensador.cantidadCifrasRegulares(numAdivinador, numAleatorio);
+            System.out.println("PROBABLE (Cifras en el lugar incorrecto) : " + cifrasRegulares);
+            if (cifrasBien == 4) {
                 System.out.println("HAS GANADO!");
             }
-        } while (cifrasCorrectas < 4);
+        } while (cifrasBien < 4);
     }
 
-    public static void adivinarPC(Scanner scanner) {
+    /*public static void adivinarPC(Scanner scanner) {
         LogicaAdivinadorOrdenador logicaAdivinadorOrdenador = new LogicaAdivinadorOrdenador();
         logicaAdivinadorOrdenador.darPrimerNumero();
         System.out.println(NumeroAleatorio.numString(logicaAdivinadorOrdenador.arrayConNumerosAdivinados.get(0)));
@@ -60,5 +64,5 @@ public class Inicio {
         if (coincidentes == 0) {
             //logicaAdivinadorOrdenador.darSegundoNumero();
         }
-    }
+        }*/
 }

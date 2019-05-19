@@ -41,6 +41,13 @@ public class LogicaOrdenador extends AdivinadorOrdenador {
         if (COINCIDENTES == 4) {
             System.out.println("4!!!!!!!!!!!!!!!!");
         }
+    }
 
+    public void indiceNumRestantes5Coincidentes1(){
+        //borrar todos los elementos del array
+        while(arrayConNumerosAdivinados.size()>1){
+            arrayConNumerosAdivinados.remove(arrayConNumerosAdivinados.size()-1);
+        }
+        
     }
 }

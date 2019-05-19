@@ -237,9 +237,6 @@ public class LogicaAdivinadorOrdenador extends AdivinadorOrdenador {
         }
     }
 
-
-
-
     public void cambiarUnaCifraDelUltimoNumeroPorOtraCifra(int posicionACambiar, int cifra) {
         int[] vectorUltimoNumero = arrayConNumerosAdivinados.get(arrayConNumerosAdivinados.size() - 1);
         int[] vectorNumeroModificado = new int[4];

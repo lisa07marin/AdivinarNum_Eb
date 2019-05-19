@@ -14,7 +14,7 @@ public class Pensador {
         return numCifrasCoincidentes;
     }
 
-    public int cifrasEnElLugarCorrecto(String numAdivinador, String numPensador) {
+    public int cantidadCifrasBien(String numAdivinador, String numPensador) {
         int cifrasLugarCorrecto = 0;
         for (int i = 0; i < numPensador.length(); i++) {
             if (numAdivinador.charAt(i) == numPensador.charAt(i)) {
@@ -24,8 +24,8 @@ public class Pensador {
         return cifrasLugarCorrecto;
     }
 
-    public int cifrasLugarIncorrecto(String numAdivinador, String numPensador) {
-        return (cifrasCoincidentes(numAdivinador, numPensador)) - (cifrasEnElLugarCorrecto(numAdivinador, numPensador));
+    public int cantidadCifrasRegulares(String numAdivinador, String numPensador) {
+        return (cifrasCoincidentes(numAdivinador, numPensador)) - (cantidadCifrasBien(numAdivinador, numPensador));
     }
 
 }
