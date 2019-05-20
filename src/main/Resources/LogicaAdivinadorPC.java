@@ -10,11 +10,10 @@ public class LogicaAdivinadorPC extends AdivinadorPC {
         String numero = darNumeroRandomDeList();
         int bien = 0;
         int regular = 0;
-        int indiceList = 0;
         do {
             vista.mostrarMensaje(numero);
-            bien = vista.pedirCifrasBien();
-            regular = vista.pedirCifrasRegulares();
+            bien = vista.pedirAlUsuarioCantidadDeCifrasBien();
+            regular = vista.pedirAlUsuarioCantidadDeCifrasRegulares();
             String[] datosDelNum = {numero, Integer.toString(bien), Integer.toString(regular)};
             listNumerosCandidatos.add(datosDelNum);
             boolean segundoCandidato = false;

@@ -20,7 +20,7 @@ public class Inicio {
         int cifrasBien = 0;
         int cifrasRegulares = 0;
         do {
-            String numAdivinador = vista.pedirNumero();
+            String numAdivinador = vista.pedirAlUsuarioUnNumero();
             cifrasBien = pensador.cantidadCifrasBien(numAdivinador, numAleatorio);
             System.out.println("BIEN: (Cifras en el lugar correcto): " + cifrasBien);
             cifrasRegulares = pensador.cantidadCifrasRegulares(numAdivinador, numAleatorio);
