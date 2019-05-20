@@ -7,9 +7,8 @@ import java.util.Scanner;
 public class Inicio {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LogicaOrdenador logicaOrdenador = new LogicaOrdenador();
-        logicaOrdenador.logicaGeneral();
-        //adivinarPC(scanner);
+        LogicaAdivinadorPC logicaAdivinadorPC=new LogicaAdivinadorPC();
+        logicaAdivinadorPC.logicaBasicaAdivinadorPC();
         //adivinadorHumano(scanner);
     }
 
@@ -32,37 +31,4 @@ public class Inicio {
         } while (cifrasBien < 4);
     }
 
-    /*public static void adivinarPC(Scanner scanner) {
-        LogicaAdivinadorOrdenador logicaAdivinadorOrdenador = new LogicaAdivinadorOrdenador();
-        logicaAdivinadorOrdenador.darPrimerNumero();
-        System.out.println(NumeroAleatorio.numString(logicaAdivinadorOrdenador.arrayConNumerosAdivinados.get(0)));
-        int coincidentes= Vista.ingresaUsuario(scanner);
-        if (coincidentes == 4) {
-            logicaAdivinadorOrdenador.coincidentes4();
-        }
-        if (coincidentes == 3) {
-            //logicaAdivinadorOrdenador.coincidentes3();
-        }
-        if (coincidentes == 2) {
-
-        }
-        if (coincidentes == 1) {
-            logicaAdivinadorOrdenador.darSegundoNumero();
-            System.out.println(NumeroAleatorio.numString(logicaAdivinadorOrdenador.arrayConNumerosAdivinados.get(logicaAdivinadorOrdenador.arrayConNumerosAdivinados.size()-1)));
-            coincidentes=Vista.ingresaUsuario(scanner);
-            if (coincidentes==1){
-                logicaAdivinadorOrdenador.segundoNumeroCoincidente1();
-                logicaAdivinadorOrdenador.restoSonLasDosCifraProbables();
-            }
-            if (coincidentes==2){
-                logicaAdivinadorOrdenador.segundoNumeroCoincidente2();
-            }
-            if (coincidentes==3){
-               logicaAdivinadorOrdenador.segundoNumeroCoincidente3();
-            }
-        }
-        if (coincidentes == 0) {
-            //logicaAdivinadorOrdenador.darSegundoNumero();
-        }
-        }*/
 }

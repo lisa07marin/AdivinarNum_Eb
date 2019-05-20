@@ -1,11 +1,11 @@
 
-¨squid:S1319"„The type of the "arrayConNumerosAdivinados" object should be an interface such as "List" rather than the implementation "ArrayList".(¶ÂÚ„şÿÿÿÿ8èÆúÂ¬-
-“squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–Â©ÿÿÿÿÿ8èÆúÂ¬-
 Ÿ"squid:ClassVariableVisibilityCheck"eMake arrayConNumerosAdivinados a static final constant or non-public and provide accessors if needed.(¶ÂÚ„şÿÿÿÿ8èÆúÂ¬-
 Dsquid:S1170
 "!Make this final field static too.(áâŒóøÿÿÿÿ8èÆúÂ¬-
-Dsquid:S1170"!Make this final field static too.(ÚÔ‰Üùÿÿÿÿ8èÆúÂ¬-
 ƒsquid:S00116
 "_Rename this field "INDICE_PRIMER_NUMERO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áâŒóøÿÿÿÿ8èÆúÂ¬-
+¨squid:S1319"„The type of the "arrayConNumerosAdivinados" object should be an interface such as "List" rather than the implementation "ArrayList".(¶ÂÚ„şÿÿÿÿ8èÆúÂ¬-
 „squid:S00116"`Rename this field "INDICE_SEGUNDO_NUMERO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÔ‰Üùÿÿÿÿ8èÆúÂ¬-
 {squid:S00116"WRename this field "COINCIDENTES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Ã’½ıÿÿÿÿ8èÆúÂ¬-
+Dsquid:S1170"!Make this final field static too.(ÚÔ‰Üùÿÿÿÿ8èÆúÂ¬-
+“squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–Â©ÿÿÿÿÿ8èÆúÂ¬-

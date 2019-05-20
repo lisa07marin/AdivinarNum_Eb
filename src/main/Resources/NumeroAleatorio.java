@@ -42,11 +42,4 @@ public class NumeroAleatorio {
         return bld.toString();
     }
 
-    public static String numString(int [] vector) {
-        StringBuilder bld = new StringBuilder();
-        for (int i = 0; i < vector.length; i++) {
-            bld.append(Integer.toString(vector[i]));
-        }
-        return bld.toString();
-    }
 }

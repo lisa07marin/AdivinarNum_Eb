@@ -8,7 +8,6 @@ public class AdivinadorPCTest {
     @Test
     public void testListDimension5040() {
         AdivinadorPC adivinadorPC = new AdivinadorPC();
-        adivinadorPC.llenarListConNumerosPosibles();
         int resultado = adivinadorPC.listNumerosPosibles.size();
         int esperado = 5040;
         assertEquals(resultado, esperado);
@@ -54,5 +53,12 @@ public class AdivinadorPCTest {
         boolean esperado=true;
         assertEquals(resultado,esperado);
     }
-
+    @Test
+    public void testFalseCifrasRegularEntre0123y3701() {
+        AdivinadorPC adivinadorPC = new AdivinadorPC();
+        adivinadorPC.llenarListConNumerosPosibles();
+        boolean resultado=adivinadorPC.comprobarCifrasRegular("0123","3701",2);
+        boolean esperado=false;
+        assertEquals(resultado,esperado);
+    }
 }

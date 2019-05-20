@@ -27,3 +27,7 @@ R
 "src/main/Resources/Validacion.java,9\b\9b10483dbcb5824131023649375beccb27fa5acd
 V
 &src/test/Resources/ValidacionTest.java,e\e\eefe73db9d76d18f799e084a9349012d4b85847d
+X
+(src/test/Resources/AdivinadorPCTest.java,f\d\fdf769a5ab9e9e7fa1c307fd1930dacf9136eabe
+Z
+*src/main/Resources/LogicaAdivinadorPC.java,9\9\99def4ef226f001c595a0d7f3330c3d7535f4ad0

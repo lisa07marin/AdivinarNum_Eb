@@ -1,0 +1,4 @@
+
+dsquid:S1126-"AReplace this if-then-else statement by a single return statement.(ä¨Ü‹ÿÿÿÿÿ8ÒÏ·­-
+dsquid:S11266"AReplace this if-then-else statement by a single return statement.(ˆÈ•“ıÿÿÿÿ8ÇŒ¸­-
+Lsquid:S2140$")Use "java.util.Random.nextInt()" instead.(èÿ®öıÿÿÿÿ8Ì‡Ù­-
