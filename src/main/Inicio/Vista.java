@@ -1,4 +1,4 @@
-package Resources;
+package Inicio;
 
 import java.util.Scanner;
 

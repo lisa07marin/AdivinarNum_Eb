@@ -1,4 +1,6 @@
-package Resources;
+package Game;
+
+import Validacion.Validacion;
 
 import java.util.ArrayList;
 import java.util.List;

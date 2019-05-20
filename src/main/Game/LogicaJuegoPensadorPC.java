@@ -1,4 +1,7 @@
-package Resources;
+package Game;
+
+import Inicio.Vista;
+import Validacion.Validacion;
 
 public class LogicaJuegoPensadorPC extends PensadorPC {
 

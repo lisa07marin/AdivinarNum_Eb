@@ -1,19 +1,19 @@
 
-{squid:S1488"dImmediately return this expression instead of assigning it to the temporary variable "coincidentes".(ôÔ¬
-squid:S1488&"\Immediately return this expression instead of assigning it to the temporary variable "bien".(Ïà‚¹ıÿÿÿÿ8ÒÔÎ­-
-[
-squid:S106 "9Replace this use of System.out or System.err by a logger.(Ÿ§±Äÿÿÿÿÿ8€¼Ê­-
-[
-squid:S106%"9Replace this use of System.out or System.err by a logger.(ññ¡üÿÿÿÿ8¤¥Í­-
-squid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "numero".(Îó“šûÿÿÿÿ8ğ…®Œ­-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ö«Ïşúÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(£Ğ¹
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ËŠ‚¤úÿÿÿÿ
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÜÈ¼æ8ğ…®Œ­-
-‚squid:S1488!"_Immediately return this expression instead of assigning it to the temporary variable "regular".(®¥àĞşÿÿÿÿ8‚ôË­-
+squid:S106 "9Replace this use of System.out or System.err by a logger.(½™ª½8û‹Èœ­-
+squid:S1488
+"^Immediately return this expression instead of assigning it to the temporary variable "numero".(Îó“šûÿÿÿÿ8ğ…®Œ­-
 [
-squid:S106*"9Replace this use of System.out or System.err by a logger.(­ñüòûÿÿÿÿ8áà¥­-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ññ¡üÿÿÿÿ8¤¥Í­-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ÿ§±Äÿÿÿÿÿ8€¼Ê­-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.( ºœøÿÿÿÿÿ8ÎÅÄœ­-
+V
+squid:S106	"9Replace this use of System.out or System.err by a logger.(ÜÈ¼æ8ğ…®Œ­-
+squid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "bien".(Ïà‚¹ıÿÿÿÿ8ÒÔÎ­-
+‚squid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "regular".(®¥àĞşÿÿÿÿ8‚ôË­-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(­ñüòûÿÿÿÿ8áà¥­-
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(şŠ§óøÿÿÿÿ8á‹Êœ­-

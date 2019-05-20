@@ -1,6 +1,6 @@
 package Inicio;
 
-import Resources.*;
+import Game.*;
 
 public class Inicio {
     public static void main(String[] args) {

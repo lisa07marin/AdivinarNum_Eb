@@ -1,4 +1,4 @@
-package Resources;
+package Validacion;
 
 public class Validacion {
 

@@ -1,4 +1,4 @@
-package Resources;
+package Game;
 
 public class NumeroSecreto {
 

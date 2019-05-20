@@ -1,4 +1,4 @@
-package Resources;
+package Game;
 
 import org.junit.Test;
 

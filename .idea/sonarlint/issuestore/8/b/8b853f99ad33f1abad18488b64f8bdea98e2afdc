@@ -1,0 +1,5 @@
+
+squid:S14888"cImmediately return this expression instead of assigning it to the temporary variable "esCandidato".(Ãˆ8À÷“’­-
+†squid:S4165%"hRemove this useless assignment; "encontrado" already holds the assigned value along all execution paths.(ÄÆûç8œÈÃ›­-
+†squid:S1488?"cImmediately return this expression instead of assigning it to the temporary variable "esCandidato".(ûÂü†ıÿÿÿÿ8À÷“’­-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(óƒÁœ8È¶ô”­-

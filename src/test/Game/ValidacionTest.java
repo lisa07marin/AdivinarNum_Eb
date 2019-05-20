@@ -1,5 +1,6 @@
-package Resources;
+package Game;
 
+import Validacion.Validacion;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -7,7 +8,7 @@ import static org.junit.Assert.*;
 public class ValidacionTest {
     @Test
     public void testTrueDimensionNumero1234(){
-        boolean resultado=Validacion.numeroTieneCuatroCifras("1234");
+        boolean resultado= Validacion.numeroTieneCuatroCifras("1234");
         boolean esperado=true;
         assertEquals(resultado,esperado);
     }

@@ -1,4 +1,6 @@
-package Resources;
+package Game;
+
+import Inicio.Vista;
 
 import java.util.ArrayList;
 

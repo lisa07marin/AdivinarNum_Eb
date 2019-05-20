@@ -1,28 +1,0 @@
-
-vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê×¡èşÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106Æ"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-[
-squid:S106W"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106¥"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106…"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-W
-squid:S106ç"9Replace this use of System.out or System.err by a logger.(Ï‚‚®8èÆúÂ¬-
-qsquid:S3776–"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(èõş™8¡ÉŸá«-
-[
-squid:S106|"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106Ï"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106œ"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106·"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-[
-squid:S106s"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106Ù"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-\
-squid:S106°"9Replace this use of System.out or System.err by a logger.(ô Îûûÿÿÿÿ8èÆúÂ¬-
-psquid:S3776P"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(—®œî8èÆúÂ¬-
