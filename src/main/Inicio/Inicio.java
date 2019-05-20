@@ -5,8 +5,13 @@ import Resources.*;
 public class Inicio {
     public static void main(String[] args) {
         Vista vista = new Vista();
-        adivinadorHumanoPensadorPC(vista);
-        adivinadorPCPensadorHumano(vista);
+        int opcion=vista.mostrarMenuDeJuegos();
+        if (opcion==1){
+            adivinadorHumanoPensadorPC(vista);
+        }
+        if (opcion==2){
+            adivinadorPCPensadorHumano(vista);
+        }
     }
 
     public static void adivinadorHumanoPensadorPC(Vista vista) {

@@ -3,11 +3,7 @@ package Resources;
 public class Validacion {
 
     public static boolean numeroTieneCuatroCifras(String numero) {
-        if (numero.length() == 4) {
-            return true;
-        } else {
-            return false;
-        }
+        return numero.length() == 4;
     }
     public static boolean cifraRepetida(String numero){
         boolean igual=false;
@@ -19,5 +15,8 @@ public class Validacion {
             }
         }
         return igual;
+    }
+    public static boolean opcionCorrecta(int opcion){
+        return opcion==1||opcion==2;
     }
 }

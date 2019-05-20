@@ -26,4 +26,11 @@ public class Vista {
     public void mostrarMensaje(String mensaje) {
         System.out.println(mensaje);
     }
+
+    public int mostrarMenuDeJuegos(){
+        System.out.println("1- Adivina el numero!");
+        System.out.println("2- Adivinaré el numero que pienses!");
+        System.out.print("--> ");
+        return scanner.nextInt();
+    }
 }
