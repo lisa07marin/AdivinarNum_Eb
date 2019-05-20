@@ -3,7 +3,7 @@ package Resources;
 import java.util.ArrayList;
 
 public class LogicaAdivinadorPC extends AdivinadorPC {
-    ArrayList<String[]> numerosCandidatos = new ArrayList<>();
+    ArrayList<String[]> listNumerosCandidatos = new ArrayList<>();
 
     public void logicaBasicaAdivinadorPC() {
         Vista vista = new Vista();
@@ -16,16 +16,19 @@ public class LogicaAdivinadorPC extends AdivinadorPC {
             bien = vista.pedirCifrasBien();
             regular = vista.pedirCifrasRegulares();
             String[] datosDelNum = {numero, Integer.toString(bien), Integer.toString(regular)};
-            numerosCandidatos.add(datosDelNum);
+            listNumerosCandidatos.add(datosDelNum);
             boolean segundoCandidato = false;
-            int i = 0;
-            indiceList=0;
             String siguienteNumero = "";
 
             boolean encontrado=false;
 
+            if (bien==4){
+                encontrado=true;
+            }
+
             while (encontrado==false){
                 siguienteNumero = listNumerosPosibles.get(0);
+                int i = 0;
 
                 do{
                     segundoCandidato = esCandidatoConPrimerNumero(siguienteNumero, i);
@@ -34,23 +37,22 @@ public class LogicaAdivinadorPC extends AdivinadorPC {
                     }else {
                         listNumerosPosibles.remove(siguienteNumero);
                         encontrado=false;
-                        indiceList++;
                     }
-                } while (segundoCandidato&&i<numerosCandidatos.size());
+                } while (segundoCandidato&&i< listNumerosCandidatos.size());
 
 
-                if (segundoCandidato&&i==numerosCandidatos.size()){
+                if (segundoCandidato&&i== listNumerosCandidatos.size()){
                     encontrado=true;
                     numero=siguienteNumero;
                     listNumerosPosibles.remove(numero);
                 }
             }
 
-        } while (bien < 5);
+        } while (bien < 4);
     }
 
     public boolean esCandidatoConPrimerNumero(String numeroAComprobar, int indice) {
-        String[] datoNum = numerosCandidatos.get(indice);
+        String[] datoNum = listNumerosCandidatos.get(indice);
         String numero = datoNum[0];
         int bien = Integer.parseInt(datoNum[1]);
         int regular = Integer.parseInt(datoNum[2]);
