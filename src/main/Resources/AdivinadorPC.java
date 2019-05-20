@@ -3,9 +3,8 @@ package Resources;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdivinadorPC extends Pensador {
+public class AdivinadorPC extends PensadorPC {
     List<String> listNumerosPosibles = new ArrayList<>();
-    int indiceNumeroRandom = 0;
 
     public AdivinadorPC() {
         llenarListConNumerosPosibles();
@@ -32,29 +31,20 @@ public class AdivinadorPC extends Pensador {
         }
     }
 
-    public String darNumeroRandomDeList() {
+    public String darPrimerNumeroRandomDeList() {
         int indice = (int) (Math.random() * 5040);
         String numero = listNumerosPosibles.get(indice);
-        this.indiceNumeroRandom = indice;
         return numero;
     }
 
 
     public boolean comprobarCifrasBien(String numero, String numero1, int cantidadBien) {
         int cantCifrasBien = cantidadCifrasBien(numero, numero1);
-        if (cantCifrasBien == cantidadBien) {
-            return true;
-        } else {
-            return false;
-        }
+        return cantCifrasBien == cantidadBien;
     }
 
     public boolean comprobarCifrasRegular(String numero, String numero1, int cantidadRegular) {
         int cantCifrasRegular = cantidadCifrasRegulares(numero, numero1);
-        if (cantCifrasRegular == cantidadRegular) {
-            return true;
-        } else {
-            return false;
-        }
+        return cantCifrasRegular == cantidadRegular;
     }
 }

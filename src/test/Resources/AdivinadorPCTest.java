@@ -17,8 +17,8 @@ public class AdivinadorPCTest {
     public void testDosNumerosRandom() {
         AdivinadorPC adivinadorPC = new AdivinadorPC();
         adivinadorPC.llenarListConNumerosPosibles();
-        String numero = adivinadorPC.darNumeroRandomDeList();
-        String numero1 = adivinadorPC.darNumeroRandomDeList();
+        String numero = adivinadorPC.darPrimerNumeroRandomDeList();
+        String numero1 = adivinadorPC.darPrimerNumeroRandomDeList();
         assertNotEquals(numero, numero1);
     }
     @Test

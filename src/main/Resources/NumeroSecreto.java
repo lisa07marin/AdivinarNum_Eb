@@ -1,6 +1,6 @@
 package Resources;
 
-public class NumeroAleatorio {
+public class NumeroSecreto {
 
     //define en un vector, de n dimension, un num aleatorio cifra por cifra, sin que se repita alguna
     public int[] definirNumAleatorio4CifrasSinRepetir(int n) {

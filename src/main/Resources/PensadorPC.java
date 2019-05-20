@@ -1,6 +1,6 @@
 package Resources;
 
-public class Pensador {
+public class PensadorPC {
 
     public int cifrasCoincidentes(String numAdivinador, String numPensador) {
         int numCifrasCoincidentes = 0;
