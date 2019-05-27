@@ -1,6 +1,7 @@
 package Game;
 
 import Inicio.Vista;
+import Validacion.Validacion;
 
 import java.util.ArrayList;
 
@@ -15,28 +16,35 @@ public class LogicaJuegoAdivinadorPC extends AdivinadorPC {
             vista.mostrarMensaje(numeroCandidato);
             bien = vista.pedirAlUsuarioCantidadDeCifrasBien();
             regular = vista.pedirAlUsuarioCantidadDeCifrasRegulares();
-            guardarNumeroEnArrayNumerosCandidatos(numeroCandidato, bien, regular);
 
-            String siguienteNumeroCandidato = "";
-            boolean numCandidatoEncontrado = false;
+            if(Validacion.bienRegularPosiblesCombinaciones(bien,regular)){
+                guardarNumeroEnArrayNumerosCandidatos(numeroCandidato, bien, regular);
 
-            if (bien == 4) {
-                numCandidatoEncontrado = true;
-                vista.mostrarMensaje("HE ADIVINADO TU NUMERO!");
-            }
-            while (!numCandidatoEncontrado&&listNumerosPosibles.size()!=0){
-                siguienteNumeroCandidato = listNumerosPosibles.get(0);
-                numCandidatoEncontrado=esCandidatoConRespectoAlRestoDeNumerosCandidatos(siguienteNumeroCandidato);
-                if (numCandidatoEncontrado) {
-                    numeroCandidato = siguienteNumeroCandidato;
-                    listNumerosPosibles.remove(numeroCandidato);
-                }else {
-                    listNumerosPosibles.remove(siguienteNumeroCandidato);
+                String siguienteNumeroCandidato = "";
+                boolean numCandidatoEncontrado = false;
+
+                if (bien == 4) {
+                    numCandidatoEncontrado = true;
+                    vista.mostrarMensaje("HE ADIVINADO TU NUMERO!");
                 }
-            }
-            if(listNumerosPosibles.isEmpty()){
-                bien=4; //se le asigna este valor para que salga del bucle
-                vista.mostrarMensaje("NO HAY NINGUN NUMERO QUE COINCIDE, HAY ALGUN DATO QUE HAS INGRESADO MAL :|");
+                while (!numCandidatoEncontrado&&listNumerosPosibles.size()!=0){
+                    siguienteNumeroCandidato = listNumerosPosibles.get(0);
+                    numCandidatoEncontrado=esCandidatoConRespectoAlRestoDeNumerosCandidatos(siguienteNumeroCandidato);
+                    if (numCandidatoEncontrado) {
+                        numeroCandidato = siguienteNumeroCandidato;
+                        listNumerosPosibles.remove(numeroCandidato);
+                    }else {
+                        listNumerosPosibles.remove(siguienteNumeroCandidato);
+                    }
+                }
+                if(listNumerosPosibles.isEmpty()&&!numCandidatoEncontrado){
+                    bien=4; //se le asigna este valor para que salga del bucle
+                    vista.mostrarMensaje("NO HAY NINGUN NUMERO QUE COINCIDA, HAY ALGUN DATO QUE HAS INGRESADO MAL :|");
+                }
+            }else {
+                vista.mostrarMensaje("LA CANTIDAD INGRESADA EN BIEN O REGULAR NO SON VALIDAS, " +
+                        "POR FAVOR INGRESE CANTIDADES CORRECTAS");
+                bien=0; //se le asigna valor cero para que se repita el bucle
             }
         } while (bien < 4);
     }
