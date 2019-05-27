@@ -5,57 +5,59 @@ import Inicio.Vista;
 import java.util.ArrayList;
 
 public class LogicaJuegoAdivinadorPC extends AdivinadorPC {
-    ArrayList<String[]> listNumerosCandidatos = new ArrayList<>(); //lista de vectores,en donde se guardaran los numeros que coinciden en bien y regular
+    private ArrayList<String[]> listNumerosCandidatos = new ArrayList<>(); //lista de vectores,en donde se guardaran los numeros que coinciden en bien y regular
 
     public void logicaBasicaAdivinadorPC(Vista vista) {
-        String numero = darPrimerNumeroRandomDeList();
+        String numeroCandidato = darPrimerNumeroRandomDeList();
         int bien = 0;
         int regular = 0;
         do {
-            vista.mostrarMensaje(numero);
+            vista.mostrarMensaje(numeroCandidato);
             bien = vista.pedirAlUsuarioCantidadDeCifrasBien();
             regular = vista.pedirAlUsuarioCantidadDeCifrasRegulares();
-            String[] datosDelNum = {numero, Integer.toString(bien), Integer.toString(regular)};
-            listNumerosCandidatos.add(datosDelNum);
-            boolean numeroCandidato = false;
-            String siguienteNumero = "";
+            guardarNumeroEnArrayNumerosCandidatos(numeroCandidato, bien, regular);
 
-            boolean encontrado = false;
+            String siguienteNumeroCandidato = "";
+            boolean numCandidatoEncontrado = false;
 
             if (bien == 4) {
-                encontrado = true;
+                numCandidatoEncontrado = true;
+                vista.mostrarMensaje("HE ADIVINADO TU NUMERO!");
             }
-
-            while (!encontrado) {
-                siguienteNumero = listNumerosPosibles.get(0);
-                int indNumerosCandidatos = 0;
-
-                do {
-                    numeroCandidato = esCandidatoConRespectoAlRestoDeNumerosCandidatos(siguienteNumero, indNumerosCandidatos);
-                    if (numeroCandidato) {
-                        indNumerosCandidatos++;
-                    } else {
-                        listNumerosPosibles.remove(siguienteNumero);
-                        encontrado = false;
-                    }
-                } while (numeroCandidato && indNumerosCandidatos < listNumerosCandidatos.size());
-
-                if (numeroCandidato && indNumerosCandidatos == listNumerosCandidatos.size()) {
-                    encontrado = true;
-                    numero = siguienteNumero;
-                    listNumerosPosibles.remove(numero);
+            while (!numCandidatoEncontrado&&listNumerosPosibles.size()!=0){
+                siguienteNumeroCandidato = listNumerosPosibles.get(0);
+                numCandidatoEncontrado=esCandidatoConRespectoAlRestoDeNumerosCandidatos(siguienteNumeroCandidato);
+                if (numCandidatoEncontrado) {
+                    numeroCandidato = siguienteNumeroCandidato;
+                    listNumerosPosibles.remove(numeroCandidato);
+                }else {
+                    listNumerosPosibles.remove(siguienteNumeroCandidato);
                 }
             }
-
+            if(listNumerosPosibles.isEmpty()){
+                bien=4; //se le asigna este valor para que salga del bucle
+                vista.mostrarMensaje("NO HAY NINGUN NUMERO QUE COINCIDE, HAY ALGUN DATO QUE HAS INGRESADO MAL :|");
+            }
         } while (bien < 4);
     }
 
-    public boolean esCandidatoConRespectoAlRestoDeNumerosCandidatos(String numeroAComprobar, int indice) {
-        String[] datoNum = listNumerosCandidatos.get(indice);
-        String numero = datoNum[0];
-        int bien = Integer.parseInt(datoNum[1]);
-        int regular = Integer.parseInt(datoNum[2]);
-        boolean esCandidato = compararDosNumeros(numeroAComprobar, numero, bien, regular);
+    public void guardarNumeroEnArrayNumerosCandidatos(String numero, int bien, int regular) {
+        String[] datosDelNum = {numero, Integer.toString(bien), Integer.toString(regular)};
+        this.listNumerosCandidatos.add(datosDelNum);
+    }
+
+    public boolean esCandidatoConRespectoAlRestoDeNumerosCandidatos(String numeroAComprobar) {
+        int indArrayNumerosCandidatos=0;
+        boolean esCandidato=false;
+        do {
+            String[] datoNum = this.listNumerosCandidatos.get(indArrayNumerosCandidatos);
+            String numero = datoNum[0];
+            int bien = Integer.parseInt(datoNum[1]);
+            int regular = Integer.parseInt(datoNum[2]);
+            esCandidato = compararDosNumeros(numeroAComprobar, numero, bien, regular);
+            indArrayNumerosCandidatos++;
+        } while (esCandidato&&indArrayNumerosCandidatos < this.listNumerosCandidatos.size());
+
         return esCandidato;
     }
 

@@ -1,16 +1,22 @@
 package Inicio;
 
 import Game.*;
+import Validacion.Validacion;
 
 public class Inicio {
     public static void main(String[] args) {
         Vista vista = new Vista();
         int opcion=vista.mostrarMenuDeJuegos();
-        if (opcion==1){
-            adivinadorHumanoPensadorPC(vista);
-        }
-        if (opcion==2){
-            adivinadorPCPensadorHumano(vista);
+
+        if (Validacion.opcionCorrecta(opcion)){
+            if (opcion==1){
+                adivinadorHumanoPensadorPC(vista);
+            }
+            if (opcion==2){
+                adivinadorPCPensadorHumano(vista);
+            }
+        }else{
+            vista.mostrarMensaje("No has ingresado una opcion correcta");
         }
     }
 

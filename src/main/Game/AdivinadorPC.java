@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdivinadorPC extends PensadorPC {
-    List<String> listNumerosPosibles = new ArrayList<>();
+    protected List<String> listNumerosPosibles = new ArrayList<>();
 
     public AdivinadorPC() {
         llenarListConNumerosPosibles();
@@ -38,7 +38,6 @@ public class AdivinadorPC extends PensadorPC {
         String numero = listNumerosPosibles.get(indice);
         return numero;
     }
-
 
     public boolean comprobarCifrasBien(String numero, String numero1, int cantidadBien) {
         int cantCifrasBien = cantidadCifrasBien(numero, numero1);
