@@ -3,7 +3,7 @@ package Inicio;
 import Game.*;
 import Validacion.Validacion;
 
-public class Inicio {
+public class JuegoInicio {
     public static void main(String[] args) {
         Vista vista = new Vista();
         int opcion=vista.mostrarMenuDeJuegos();
